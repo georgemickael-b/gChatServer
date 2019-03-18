@@ -14,6 +14,7 @@
   "author": "George Mickael",
   "license": "ISC",
   "dependencies": {
+    "@babel/polyfill": "^7.2.5",
     "@babel/runtime": "^7.3.4",
     "body-parser": "^1.18.3",
     "cookie-session": "^1.3.3",

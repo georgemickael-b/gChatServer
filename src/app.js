@@ -16,8 +16,7 @@ import passport from "passport"
 import http from 'http'
 import SocketIO from 'socket.io'
 import ioCon from "./config/io.config"
-
-
+import '@babel/polyfill'
 
 let ioSessions = {} // Should be a store like redis.
 
