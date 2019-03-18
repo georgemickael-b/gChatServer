@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start":"node build/app.js",
-    "heroku-postbuild":"env-cmd ./env/prod.env babel src --out-dir build --copy-files",
+    "heroku-postbuild":"babel src --out-dir build --copy-files",
     "dev": "env-cmd ./env/dev.env nodemon --exec babel-node src/app.js",
     "build-babel": "babel -d ./build ./src -s",
     "build": "npm run clean && npm run build-babel",
