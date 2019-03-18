@@ -57,7 +57,7 @@ class App {
         this.app.use("/chats", chatRoute);
     }
     startServer() {
-        this.app.listen(process.env.APP_PORT || 3000);
+        this.app.listen(process.env.APP_PORT || process.env.PORT  || 3000);
         this.server.listen(3020);
     }
     configDB() {
